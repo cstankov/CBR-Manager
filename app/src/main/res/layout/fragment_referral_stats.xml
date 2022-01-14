@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.statsFragment.ReferralStatsFragment"
+    android:background="@drawable/backgroundgradient">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Referral Stats"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/loginpageroundstyle"
+            android:orientation="horizontal"
+            android:radius="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Resources Requested"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:stretchColumns="*">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_border">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/table_border"
+                            android:text="" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:text="  Total  "
+                            android:textColor="@color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_border">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:text="Wheel Chairs"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/referral_wheelchair_stats"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:gravity="center_horizontal"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_border">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:text="Wheel Chair Repairs"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/referral_wheelchairRepair_stats"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:gravity="center_horizontal"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_border">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:text="Prosthetics"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/referral_prosthetics_stats"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:gravity="center_horizontal"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_border">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:text="Orthotic"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/referral_orthotics_stats"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:gravity="center_horizontal"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_border">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:text="Physiotherapy"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/referral_physiotherapy_stats"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:gravity="center_horizontal"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_border">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:text="Amputee"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/referral_amputee_stats"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:gravity="center_horizontal"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_border">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:text="Polio"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/referral_polio_stats"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:gravity="center_horizontal"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_border">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:text="Spinal cord injury"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/referral_spinalCord_stats"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:gravity="center_horizontal"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_border">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:text="Cerebral palsy"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/referral_cerebralPalsy_stats"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:gravity="center_horizontal"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_border">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:text="Spina bifida"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/referral_spinaBifida_stats"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:gravity="center_horizontal"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_border">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:text="Hydrocephalus"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/referral_hydrocephalus_stats"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:gravity="center_horizontal"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_border">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:text="Visual Impairment"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/referral_visualImpairment_stats"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:gravity="center_horizontal"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_border">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:text="Hearing Impairment"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/referral_hearingImpairment_stats"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:gravity="center_horizontal"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_border">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:text="Other"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/referral_other_stats"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_border"
+                            android:gravity="center_horizontal"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/unresolvedReferralText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Unresolved Referrals"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+
+        <TextView
+            android:id="@+id/unresolvedReferralTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/unresolvedReferralText"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+        <ListView
+            android:id="@+id/UnresolvedReferralList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/unresolvedReferralText"
+            app:layout_constraintVertical_bias="0.744"></ListView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
